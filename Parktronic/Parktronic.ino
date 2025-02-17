@@ -188,6 +188,7 @@ void clearLEDs() {
   digitalWrite(g, 0);
 }
 
+
 void zero() {
   digitalWrite(a, 1);
   digitalWrite(b, 1);
@@ -198,8 +199,6 @@ void zero() {
   digitalWrite(g, 1);
 }
 
-
-
 void one() {
   digitalWrite(a, 0);
   digitalWrite(b, 1);
@@ -207,57 +206,57 @@ void one() {
   digitalWrite(d, 0);
   digitalWrite(e, 0);
   digitalWrite(f, 0);
-  digitalWrite(g, 0);
+  digitalWrite(g, 1);
 }
 
 void two() {
   digitalWrite(a, 1);
   digitalWrite(b, 1);
-  digitalWrite(c, 0);
+  digitalWrite(c, 1);
   digitalWrite(d, 1);
   digitalWrite(e, 1);
+  digitalWrite(f, 0);
+  digitalWrite(g, 0);
+}
+
+void three() {
+  digitalWrite(a, 1);
+  digitalWrite(b, 1);
+  digitalWrite(c, 1);
+  digitalWrite(d, 1);
+  digitalWrite(e, 0);
   digitalWrite(f, 0);
   digitalWrite(g, 1);
 }
 
-void three() {
-  digitalWrite(a, HIGH);
-  digitalWrite(b, HIGH);
-  digitalWrite(c, HIGH);
-  digitalWrite(d, HIGH);
-  digitalWrite(e, LOW);
-  digitalWrite(f, LOW);
-  digitalWrite(g, HIGH);
-}
-
 void four() {
-  digitalWrite(a, LOW);
-  digitalWrite(b, HIGH);
-  digitalWrite(c, HIGH);
-  digitalWrite(d, LOW);
-  digitalWrite(e, LOW);
-  digitalWrite(f, HIGH);
-  digitalWrite(g, HIGH);
+  digitalWrite(a, 0);
+  digitalWrite(b, 1);
+  digitalWrite(c, 1);
+  digitalWrite(d, 0);
+  digitalWrite(e, 0);
+  digitalWrite(f, 1);
+  digitalWrite(g, 1);
 }
 
 void five() {
-  digitalWrite(a, HIGH);
-  digitalWrite(b, LOW);
-  digitalWrite(c, HIGH);
-  digitalWrite(d, HIGH);
-  digitalWrite(e, LOW);
-  digitalWrite(f, HIGH);
-  digitalWrite(g, HIGH);
+  digitalWrite(a, 1);
+  digitalWrite(b, 0);
+  digitalWrite(c, 1);
+  digitalWrite(d, 1);
+  digitalWrite(e, 0);
+  digitalWrite(f, 1);
+  digitalWrite(g, 1);
 }
 
 void six() {
-  digitalWrite(a, HIGH);
-  digitalWrite(b, LOW);
-  digitalWrite(c, HIGH);
-  digitalWrite(d, HIGH);
-  digitalWrite(e, HIGH);
-  digitalWrite(f, HIGH);
-  digitalWrite(g, HIGH);
+  digitalWrite(a, 1);
+  digitalWrite(b, 0);
+  digitalWrite(c, 1);
+  digitalWrite(d, 1);
+  digitalWrite(e, 1);
+  digitalWrite(f, 1);
+  digitalWrite(g, 1);
 }
 
 void seven() {
@@ -271,24 +270,25 @@ void seven() {
 }
 
 void eight() {
-  digitalWrite(a, HIGH);
-  digitalWrite(b, HIGH);
-  digitalWrite(c, HIGH);
-  digitalWrite(d, HIGH);
-  digitalWrite(e, HIGH);
-  digitalWrite(f, HIGH);
-  digitalWrite(g, HIGH);
+  digitalWrite(a, 1);
+  digitalWrite(b, 1);
+  digitalWrite(c, 1);
+  digitalWrite(d, 1);
+  digitalWrite(e, 1);
+  digitalWrite(f, 1);
+  digitalWrite(g, 1);
 }
 
 void nine() {
-  digitalWrite(a, HIGH);
-  digitalWrite(b, HIGH);
-  digitalWrite(c, HIGH);
-  digitalWrite(d, HIGH);
-  digitalWrite(e, LOW);
-  digitalWrite(f, HIGH);
-  digitalWrite(g, HIGH);
+  digitalWrite(a, 1);
+  digitalWrite(b, 1);
+  digitalWrite(c, 1);
+  digitalWrite(d, 1);
+  digitalWrite(e, 0);
+  digitalWrite(f, 1);
+  digitalWrite(g, 1);
 }
+
 
 void add() {
   count ++;
